@@ -69,16 +69,5 @@
  
 }
 
-- (NSRect)rectOfCellAtColumn:(NSUInteger)column row:(NSUInteger)row {
-    NSRect frame = [self frame];
-    CGFloat cellWidth = frame.size.width / 100;
-    CGFloat cellHeight = frame.size.height / 100;
-    CGFloat x = column * cellWidth;
-    CGFloat y = row * cellHeight;
-    NSRect rect = NSMakeRect(x, y, cellWidth, cellHeight);
-    NSAlignmentOptions alignOpts = NSAlignMinXNearest | NSAlignMinYNearest |
-    NSAlignMaxXNearest | NSAlignMaxYNearest ;
-    return [self backingAlignedRect:rect options:alignOpts];
-}
 
 @end
