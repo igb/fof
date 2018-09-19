@@ -14,7 +14,15 @@
     [super viewDidLoad];
 
     // Do any additional setup after loading the view.
+    
+    CGRect myNewRect = CGRectMake(100, 100, 150, 150);
+    
+    CGContextRef ctx = [[NSGraphicsContext currentContext] CGContext];
+    CGContextSetFillColorWithColor(ctx, [[NSColor redColor] CGColor]);
+    CGContextFillRect(ctx, myNewRect);
+
 }
+
 
 
 - (void)setRepresentedObject:(id)representedObject {
