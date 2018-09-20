@@ -6,9 +6,11 @@
 //  Copyright © 2018 Ian Brown. All rights reserved.
 //
 
-#import "MyGrid.h"
+#import "Grid.h"
 
-@implementation MyGrid
+@implementation Grid
+
+
 
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
@@ -45,7 +47,8 @@
      
     }
     
-    
+    // draw Y ticks
+
     for (int y=0; y<frame.size.height; y++)
     {
         CGFloat y_start_x = 0;
@@ -65,9 +68,18 @@
     }
     
    
-    
  
 }
+
+
+- (void)mouseDown:(NSEvent*)theEvent;
+{
+    self.lastMousePoint = [theEvent locationInWindow];
+    [self setNeedsDisplay:YES];
+}
+
+
+
 
 
 @end

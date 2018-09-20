@@ -8,6 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface MyGrid : NSView
-
+@interface Grid : NSView
+    @property NSPoint lastMousePoint;
 @end
