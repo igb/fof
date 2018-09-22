@@ -67,16 +67,38 @@
         
     }
     
-   
+    
+    
+    // DRAW CURVE
+    
+    if (self.path != nil) {
+        
+        [[NSColor orangeColor] setStroke];
+
+        [self.path stroke];
+    
+    }
  
 }
 
 
 - (void)mouseDown:(NSEvent*)theEvent;
 {
-    self.lastMousePoint = [theEvent locationInWindow];
+    // INITIALIZE PATH
+    self.path = [NSBezierPath bezierPath];
+    [self.path moveToPoint:[theEvent locationInWindow]];
+}
+
+-(void)mouseMoved:(NSEvent *)event {
+    NSLog(@"move");
+    
+}
+
+-(void)mouseDragged:(NSEvent *)event {
+    [self.path lineToPoint:[event locationInWindow]];
     [self setNeedsDisplay:YES];
 }
+
 
 
 

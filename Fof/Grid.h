@@ -9,5 +9,5 @@
 #import <Cocoa/Cocoa.h>
 
 @interface Grid : NSView
-    @property NSPoint lastMousePoint;
+    @property NSBezierPath* path;
 @end

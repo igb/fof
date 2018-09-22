@@ -14,7 +14,7 @@
 		10BCA95E214F0227009E5911 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA95D214F0227009E5911 /* main.m */; };
 		10BCA969214F0227009E5911 /* FofTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA968214F0227009E5911 /* FofTests.m */; };
 		10BCA974214F0227009E5911 /* FofUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA973214F0227009E5911 /* FofUITests.m */; };
-		10BCA98521527781009E5911 /* MyGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA98421527781009E5911 /* MyGrid.m */; };
+		10BCA98521527781009E5911 /* Grid.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA98421527781009E5911 /* Grid.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +51,8 @@
 		10BCA96F214F0227009E5911 /* FofUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FofUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BCA973214F0227009E5911 /* FofUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FofUITests.m; sourceTree = "<group>"; };
 		10BCA975214F0227009E5911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		10BCA98321527781009E5911 /* MyGrid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyGrid.h; sourceTree = "<group>"; };
-		10BCA98421527781009E5911 /* MyGrid.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyGrid.m; sourceTree = "<group>"; };
+		10BCA98321527781009E5911 /* Grid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Grid.h; sourceTree = "<group>"; };
+		10BCA98421527781009E5911 /* Grid.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Grid.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +112,8 @@
 				10BCA95C214F0227009E5911 /* Info.plist */,
 				10BCA95D214F0227009E5911 /* main.m */,
 				10BCA95F214F0227009E5911 /* Fof.entitlements */,
-				10BCA98321527781009E5911 /* MyGrid.h */,
-				10BCA98421527781009E5911 /* MyGrid.m */,
+				10BCA98321527781009E5911 /* Grid.h */,
+				10BCA98421527781009E5911 /* Grid.m */,
 			);
 			path = Fof;
 			sourceTree = "<group>";
@@ -268,7 +268,7 @@
 				10BCA956214F0224009E5911 /* ViewController.m in Sources */,
 				10BCA95E214F0227009E5911 /* main.m in Sources */,
 				10BCA953214F0224009E5911 /* AppDelegate.m in Sources */,
-				10BCA98521527781009E5911 /* MyGrid.m in Sources */,
+				10BCA98521527781009E5911 /* Grid.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
