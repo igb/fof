@@ -10,4 +10,9 @@
 
 @interface Grid : NSView
     @property NSBezierPath* path;
+    @property NSMutableArray* points;
+    @property CGFloat xAxis;
+    @property CGFloat yAxis;
+
+
 @end
