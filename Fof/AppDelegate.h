@@ -9,7 +9,10 @@
 #import <Cocoa/Cocoa.h>
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
+@property NSArray* mappedPoints;
 
+- (IBAction)generateCode:(id)sender;
+- (void)setMappedPoints:(NSArray*)mappedPoints;
 
 @end
 

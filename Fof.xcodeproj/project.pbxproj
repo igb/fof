@@ -15,6 +15,8 @@
 		10BCA969214F0227009E5911 /* FofTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA968214F0227009E5911 /* FofTests.m */; };
 		10BCA974214F0227009E5911 /* FofUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA973214F0227009E5911 /* FofUITests.m */; };
 		10BCA98521527781009E5911 /* Grid.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA98421527781009E5911 /* Grid.m */; };
+		10BCA994216297BE009E5911 /* JavaCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA993216297BE009E5911 /* JavaCodeGenerator.m */; };
+		10BCA995216297BE009E5911 /* JavaCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA993216297BE009E5911 /* JavaCodeGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		10BCA975214F0227009E5911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10BCA98321527781009E5911 /* Grid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Grid.h; sourceTree = "<group>"; };
 		10BCA98421527781009E5911 /* Grid.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Grid.m; sourceTree = "<group>"; };
+		10BCA9912162971B009E5911 /* CodeGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeGenerator.h; sourceTree = "<group>"; };
+		10BCA992216297BE009E5911 /* JavaCodeGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JavaCodeGenerator.h; sourceTree = "<group>"; };
+		10BCA993216297BE009E5911 /* JavaCodeGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JavaCodeGenerator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +119,9 @@
 				10BCA95F214F0227009E5911 /* Fof.entitlements */,
 				10BCA98321527781009E5911 /* Grid.h */,
 				10BCA98421527781009E5911 /* Grid.m */,
+				10BCA9912162971B009E5911 /* CodeGenerator.h */,
+				10BCA992216297BE009E5911 /* JavaCodeGenerator.h */,
+				10BCA993216297BE009E5911 /* JavaCodeGenerator.m */,
 			);
 			path = Fof;
 			sourceTree = "<group>";
@@ -267,6 +275,7 @@
 			files = (
 				10BCA956214F0224009E5911 /* ViewController.m in Sources */,
 				10BCA95E214F0227009E5911 /* main.m in Sources */,
+				10BCA994216297BE009E5911 /* JavaCodeGenerator.m in Sources */,
 				10BCA953214F0224009E5911 /* AppDelegate.m in Sources */,
 				10BCA98521527781009E5911 /* Grid.m in Sources */,
 			);
@@ -276,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10BCA995216297BE009E5911 /* JavaCodeGenerator.m in Sources */,
 				10BCA969214F0227009E5911 /* FofTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,7 +438,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Fof/Fof.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Fof/Info.plist;
@@ -445,7 +454,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Fof/Fof.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Fof/Info.plist;

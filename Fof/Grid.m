@@ -7,12 +7,14 @@
 //
 
 #import "Grid.h"
+#import "AppDelegate.h"
+
 
 @implementation Grid
 
 
-
 - (void)drawRect:(NSRect)dirtyRect {
+    self.size = 20;
     [super drawRect:dirtyRect];
     
     [self.window setBackgroundColor:[NSColor whiteColor]];
@@ -24,11 +26,10 @@
     
     [[NSColor blueColor] setStroke];
     CGFloat line = 0.5;
-    CGFloat size = 20;
     CGFloat BORDER = 0;
 
     // DRAW X TICKS
-    for (int x=BORDER; x<frame.size.width - BORDER; x = x + size)
+    for (int x=BORDER; x<frame.size.width - BORDER; x = x + self.size)
     {
         
 
@@ -51,7 +52,7 @@
         [control stroke];
         
         
-        if ( fabs(((frame.size.width - BORDER) / 2) - x) <= size) {
+        if ( fabs(((frame.size.width - BORDER) / 2) - x) <= self.size) {
             self.xAxis = x;
         }
        
@@ -62,7 +63,7 @@
     
     // DRAW Y TICKS
 
-    for (int y=BORDER; y<frame.size.height - BORDER; y = y + size)
+    for (int y=BORDER; y<frame.size.height - BORDER; y = y + self.size)
     {
         CGFloat y_start_x = BORDER;
         CGFloat y_start_y = y;
@@ -79,7 +80,7 @@
         [control stroke];
         
         
-        if ( fabs(((frame.size.height - BORDER) / 2) - y) <= size) {
+        if ( fabs(((frame.size.height - BORDER) / 2) - y) <= self.size) {
             self.yAxis = y;
         }
         
@@ -156,6 +157,25 @@
     NSLog(@"mouse up");
     NSLog(@"HALF: %f", [self frame].size.width / 2);
     NSLog(@"points size: %d", [self.points count]);
+    NSLog(@"X axis: %f", self.xAxis);
+    NSLog(@"Y axis: %f", self.yAxis);
+    
+    NSMutableString* pointStr = [[NSMutableString alloc] init];
+    for (int i = 0; i < [self.points count]; i++) {
+        NSValue* pointValue = [self.points objectAtIndex:i];
+        NSPoint point = [pointValue pointValue];
+        [pointStr appendString:[NSString stringWithFormat:@"NSMakePoint(%f, %f);\n", point.x, point.y]];
+        
+    }
+    
+    
+    //transform and pass back to app delegate for export
+    NSArray *mappedPoints = [self map:self.points];
+    AppDelegate* myDelegate = [[NSApplication sharedApplication] delegate];
+    [myDelegate setMappedPoints:mappedPoints];
+    
+    NSLog(@"%@", pointStr);
+    
 }
 
 -(void)mouseDragged:(NSEvent *)event {
@@ -168,7 +188,31 @@
 }
 
 
+- (CGFloat) transformX:(CGFloat)xPoint {
+    return [self transform:xPoint :self.xAxis :self.size];
 
+    
+}
+- (CGFloat) transformY:(CGFloat)yPoint {
+    return [self transform:yPoint :self.yAxis :self.size];
+
+}
+
+- (CGFloat) transform:(CGFloat)point :(CGFloat)origin :(CGFloat)size{
+    return (point - origin) / size;
+    
+}
+
+- (NSArray*) map:(NSArray*)array {
+    NSMutableArray* newArray = [[NSMutableArray alloc] init];
+    for (int i =0; i < [array count]; i++) {
+        NSValue* pointValue = [self.points objectAtIndex:i];
+        NSPoint point = [pointValue pointValue];
+        [newArray addObject:[NSValue valueWithPoint:NSMakePoint([self transformX:point.x], [self transformY:point.y])]];
+    }
+    
+    return newArray;
+}
 
 
 

@@ -118,6 +118,25 @@
                                     </items>
                                 </menu>
                             </menuItem>
+                            <menuItem title="Generate" state="on" id="DPI-dy-gzb" userLabel="Generate">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Generate" id="fvh-Kt-eMy">
+                                    <items>
+                                        <menuItem title="Java" id="XkR-pX-ZVc">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="generateCode:" target="Ady-hI-5gd" id="bpW-yw-s3T"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Scala" id="WSG-ld-0B8">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                        <menuItem title="JavaScript" id="Ctx-Ka-lP1">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
                             <menuItem title="Edit" id="5QF-Oa-p0T">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Edit" id="W48-6f-4Dl">

@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "Grid.h"
 
 @interface FofTests : XCTestCase
 
@@ -24,9 +25,18 @@
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testTransform {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    XCTAssert(-4 == [[[Grid alloc] init] transform:520 :600 :20]);
+    
+}
+
+- (void)testMap {
+    // This is an example of a functional test case.
+    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    XCTAssert(-4 == [[[Grid alloc] init] transform:520 :600 :20]);
+    
 }
 
 - (void)testPerformanceExample {

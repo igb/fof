@@ -13,6 +13,14 @@
     @property NSMutableArray* points;
     @property CGFloat xAxis;
     @property CGFloat yAxis;
+    @property CGFloat size;
+
+
+- (CGFloat) transformX:(CGFloat)xPoint;
+- (CGFloat) transformY:(CGFloat)yPoint;
+- (CGFloat) transform:(CGFloat)point :(CGFloat)origin :(CGFloat)size;
+- (NSArray*) map:(NSArray*)array;
+
 
 
 @end
