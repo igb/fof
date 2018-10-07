@@ -168,20 +168,23 @@
         
     }
     
+    self.maxX=CGFLOAT_MIN;
     
     //transform and pass back to app delegate for export
     NSArray *mappedPoints = [self map:self.points];
     AppDelegate* myDelegate = [[NSApplication sharedApplication] delegate];
     [myDelegate setMappedPoints:mappedPoints];
     
-    NSLog(@"%@", pointStr);
     
 }
 
 -(void)mouseDragged:(NSEvent *)event {
     NSPoint point = [event locationInWindow];
-    [self.points addObject:[NSValue valueWithPoint:point]];
-    [self.path lineToPoint:point];
+    if (point.x > self.maxX) {
+        [self.points addObject:[NSValue valueWithPoint:point]];
+        [self.path lineToPoint:point];
+        self.maxX = point.x;
+    }
     [self setNeedsDisplay:YES];
     
     

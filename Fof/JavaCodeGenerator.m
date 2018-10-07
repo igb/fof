@@ -27,7 +27,7 @@
     // LINEAR INTERPOLATION METHOD
     [stringBuffer appendString:@"\tpublic static Double interpolate(Double x, Point2D.Double a, Point2D.Double b) {\n"];
     [stringBuffer appendString:@"\t\treturn a.y + ((b.y - a.y) *   ((x - a.x) / (b.x - a.x)));\n"];
-    [stringBuffer appendString:@"}\n\n"];
+    [stringBuffer appendString:@"\t}\n\n"];
     
     
     
@@ -45,7 +45,7 @@
     [stringBuffer appendString:@"\n"];
     [stringBuffer appendString:@"\t\t}\n"];
     [stringBuffer appendString:@"\t\treturn a;\n"];
-    [stringBuffer appendString:@"\t}\n"];
+    [stringBuffer appendString:@"\t}\n\n"];
     
     
     //find B
@@ -58,7 +58,7 @@
     [stringBuffer appendString:@"\t\t\n"];
     [stringBuffer appendString:@"\t\t}\n"];
     [stringBuffer appendString:@"\t\treturn null;\n"];
-    [stringBuffer appendString:@"\t}\n"];
+    [stringBuffer appendString:@"\t}\n\n"];
 
 
     // PSVM
@@ -71,7 +71,7 @@
         
 
     
-    [stringBuffer appendString:@"\t}\n"];
+    [stringBuffer appendString:@"\t}\n\n"];
     [stringBuffer appendString:@"}\n"];
     
     return stringBuffer;

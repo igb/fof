@@ -14,6 +14,8 @@
     @property CGFloat xAxis;
     @property CGFloat yAxis;
     @property CGFloat size;
+    @property CGFloat maxX;
+
 
 
 - (CGFloat) transformX:(CGFloat)xPoint;
