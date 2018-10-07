@@ -45,18 +45,44 @@ public class Fof {
 	};
 
 
+    public static Point2D.Double findA(Double x, Point2D.Double[] points) {
+	Point2D.Double a = null;
+	for (int i = 0; i < points.length; i++) {
+	    if (points[i].x > x) {
+		return a;
+	    } else {
+		a = points[i];
+	    }
+
+	}
+	return a;
+    }
+
+
+
+    public static Point2D.Double findB(Double x, Point2D.Double[] points) {
+	for (int i = 0; i < points.length; i++) {
+	    if (points[i].x > x) {
+		return points[i];
+	    }
+
+	}
+	return null;
+    }
+
+
     public static Double interpolate(Double x, Point2D.Double a, Point2D.Double b) {
 
 	return a.y + ((b.y - a.y) *   ((x - a.x) / (b.x - a.x)));
     }
 
-	public static void main(String[] args) {
-	   Point2D.Double a =   new Point2D.Double(-0.600391, -0.771680);
-
-	   Point2D.Double b =   new Point2D.Double(-0.569141, -0.724609);
-
-	   Double y = interpolate(-0.58, a, b);
-	   System.out.println(y);
+    
+    public static void main(String[] args) {
+	Double x = Double.parseDouble(args[0]);
+	Point2D.Double a = findA(x, points);
+	Point2D.Double b = findB(x, points);
+	Double y = interpolate(x, a, b);
+	System.out.println(y);
 	    
-	}
+    }
 }
