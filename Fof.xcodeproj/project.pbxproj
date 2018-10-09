@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		104CC71E216C54AD00F6E8BC /* FofWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104CC71D216C54AD00F6E8BC /* FofWindowController.m */; };
+		104CC71F216C54AD00F6E8BC /* FofWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104CC71D216C54AD00F6E8BC /* FofWindowController.m */; };
+		104CC720216C54AD00F6E8BC /* FofWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104CC71D216C54AD00F6E8BC /* FofWindowController.m */; };
 		10BCA953214F0224009E5911 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA952214F0224009E5911 /* AppDelegate.m */; };
 		10BCA956214F0224009E5911 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA955214F0224009E5911 /* ViewController.m */; };
 		10BCA958214F0227009E5911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BCA957214F0227009E5911 /* Assets.xcassets */; };
@@ -37,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		104CC71C216C54AD00F6E8BC /* FofWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FofWindowController.h; sourceTree = "<group>"; };
+		104CC71D216C54AD00F6E8BC /* FofWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FofWindowController.m; sourceTree = "<group>"; };
 		10BCA94E214F0224009E5911 /* Fof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fof.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BCA951214F0224009E5911 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		10BCA952214F0224009E5911 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -122,6 +127,8 @@
 				10BCA9912162971B009E5911 /* CodeGenerator.h */,
 				10BCA992216297BE009E5911 /* JavaCodeGenerator.h */,
 				10BCA993216297BE009E5911 /* JavaCodeGenerator.m */,
+				104CC71C216C54AD00F6E8BC /* FofWindowController.h */,
+				104CC71D216C54AD00F6E8BC /* FofWindowController.m */,
 			);
 			path = Fof;
 			sourceTree = "<group>";
@@ -276,6 +283,7 @@
 				10BCA956214F0224009E5911 /* ViewController.m in Sources */,
 				10BCA95E214F0227009E5911 /* main.m in Sources */,
 				10BCA994216297BE009E5911 /* JavaCodeGenerator.m in Sources */,
+				104CC71E216C54AD00F6E8BC /* FofWindowController.m in Sources */,
 				10BCA953214F0224009E5911 /* AppDelegate.m in Sources */,
 				10BCA98521527781009E5911 /* Grid.m in Sources */,
 			);
@@ -285,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				104CC71F216C54AD00F6E8BC /* FofWindowController.m in Sources */,
 				10BCA995216297BE009E5911 /* JavaCodeGenerator.m in Sources */,
 				10BCA969214F0227009E5911 /* FofTests.m in Sources */,
 			);
@@ -295,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10BCA974214F0227009E5911 /* FofUITests.m in Sources */,
+				104CC720216C54AD00F6E8BC /* FofWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

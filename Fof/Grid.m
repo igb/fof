@@ -206,6 +206,22 @@
     
 }
 
+- (CGFloat) reverseTransform:(CGFloat)point :(CGFloat)origin :(CGFloat)size{
+    return (point * size) + origin;
+    
+}
+
+- (CGFloat) reverseTransformX:(CGFloat)xPoint {
+    return [self reverseTransform:xPoint :self.xAxis :self.size];
+    
+    
+}
+- (CGFloat) reverseTransformY:(CGFloat)yPoint {
+    return [self reverseTransform:yPoint :self.yAxis :self.size];
+    
+}
+
+
 - (NSArray*) map:(NSArray*)array {
     NSMutableArray* newArray = [[NSMutableArray alloc] init];
     for (int i =0; i < [array count]; i++) {
@@ -218,5 +234,43 @@
 }
 
 
+- (NSArray*) reMap:(NSArray*)array {
+    NSMutableArray* newArray = [[NSMutableArray alloc] init];
+    for (int i =0; i < [array count]; i++) {
+        NSValue* pointValue = [array objectAtIndex:i];
+        NSPoint point = [pointValue pointValue];
+        [newArray addObject:[NSValue valueWithPoint:NSMakePoint([self reverseTransformX:point.x], [self reverseTransformY:point.y])]];
+    }
+    
+    return newArray;
+}
+
+
+-(void)viewDidEndLiveResize {
+    
+
+    [self handleResize];
+    
+}
+-(void) handleResize {
+    
+    AppDelegate* myDelegate = [[NSApplication sharedApplication] delegate];
+    if (myDelegate.mappedPoints != nil && ([myDelegate.mappedPoints count] > 2)) {
+        self.points = [[NSMutableArray alloc] initWithArray:[self reMap:myDelegate.mappedPoints]];
+        self.path = [NSBezierPath bezierPath];
+        [self.path moveToPoint:[[self.points objectAtIndex:0] pointValue]];
+        for (int i = 0; i < [self.points count]; i++) {
+            NSPoint point = [[self.points objectAtIndex:i] pointValue];
+            [self.path lineToPoint:point];
+        }
+        
+        [self setNeedsDisplay:YES];
+    }
+}
+
+
+- (void)windowDidEnterFullScreen:(NSNotification *)notification {
+    NSLog(@"here!");
+}
 
 @end

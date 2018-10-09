@@ -22,6 +22,7 @@
 - (CGFloat) transformY:(CGFloat)yPoint;
 - (CGFloat) transform:(CGFloat)point :(CGFloat)origin :(CGFloat)size;
 - (NSArray*) map:(NSArray*)array;
+- (void)handleResize;
 
 
 
