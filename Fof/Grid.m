@@ -12,9 +12,30 @@
 
 @implementation Grid
 
+-  (id)initWithFrame:(CGRect)aRect
+{
+    self = [super initWithFrame:aRect];
+    
+    if (self)
+    {
+        self.size = 20;
+    }
+    
+    return self;
+}
+
+- (id)initWithCoder:(NSCoder*)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self)
+    {
+        self.size = 20;
+    }
+    
+    return self;
+}
 
 - (void)drawRect:(NSRect)dirtyRect {
-    self.size = 20;
     [super drawRect:dirtyRect];
     
     [self.window setBackgroundColor:[NSColor whiteColor]];
@@ -264,13 +285,16 @@
             [self.path lineToPoint:point];
         }
         
-        [self setNeedsDisplay:YES];
     }
+    
+    [self setNeedsDisplay:YES];
+    
 }
 
 
-- (void)windowDidEnterFullScreen:(NSNotification *)notification {
-    NSLog(@"here!");
-}
+
+
+
+
 
 @end

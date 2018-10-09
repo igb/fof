@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "CodeGenerator.h"
 #import "JavaCodeGenerator.h"
+#import "Grid.h"
 
 
 @interface AppDelegate ()
@@ -71,6 +72,15 @@
     
 }
 
+- (IBAction)increaseGridScale:(id)sender {
+    Grid* grid = [[[[NSApplication sharedApplication] windows] objectAtIndex:0] contentView];
+    [grid setSize:(grid.size * 2)];
+    [grid handleResize];
+}
 
-
+- (IBAction)decreaseGridScale:(id)sender {
+    Grid* grid = [[[[NSApplication sharedApplication] windows] objectAtIndex:0] contentView];
+    [grid setSize:(grid.size / 2)];
+    [grid handleResize];
+}
 @end

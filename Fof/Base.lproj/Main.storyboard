@@ -118,25 +118,6 @@
                                     </items>
                                 </menu>
                             </menuItem>
-                            <menuItem title="Generate" state="on" id="DPI-dy-gzb" userLabel="Generate">
-                                <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="Generate" id="fvh-Kt-eMy">
-                                    <items>
-                                        <menuItem title="Java" id="XkR-pX-ZVc">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                            <connections>
-                                                <action selector="generateCode:" target="Ady-hI-5gd" id="bpW-yw-s3T"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Scala" id="WSG-ld-0B8">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                        </menuItem>
-                                        <menuItem title="JavaScript" id="Ctx-Ka-lP1">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
-                                        </menuItem>
-                                    </items>
-                                </menu>
-                            </menuItem>
                             <menuItem title="Edit" id="5QF-Oa-p0T">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Edit" id="W48-6f-4Dl">
@@ -647,6 +628,19 @@
                                                 <action selector="toggleFullScreen:" target="Ady-hI-5gd" id="dU3-MA-1Rq"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="b2H-ZC-k4U"/>
+                                        <menuItem title="Increase Grid Scale" keyEquivalent="k" id="Yx4-II-a8T">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="increaseGridScale:" target="Ady-hI-5gd" id="AsY-nk-DJ1"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Decrease Grid Scale" keyEquivalent="j" id="RwB-e7-gPO">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="decreaseGridScale:" target="Ady-hI-5gd" id="iQQ-Ya-UDA"/>
+                                            </connections>
+                                        </menuItem>
                                     </items>
                                 </menu>
                             </menuItem>
@@ -671,6 +665,25 @@
                                             <connections>
                                                 <action selector="arrangeInFront:" target="Ady-hI-5gd" id="DRN-fu-gQh"/>
                                             </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Generate" state="on" id="DPI-dy-gzb" userLabel="Generate">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Generate" id="fvh-Kt-eMy">
+                                    <items>
+                                        <menuItem title="Java" id="XkR-pX-ZVc">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="generateCode:" target="Ady-hI-5gd" id="bpW-yw-s3T"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Scala" id="WSG-ld-0B8">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        </menuItem>
+                                        <menuItem title="JavaScript" id="Ctx-Ka-lP1">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
                                         </menuItem>
                                     </items>
                                 </menu>

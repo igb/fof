@@ -23,6 +23,8 @@
 - (CGFloat) transform:(CGFloat)point :(CGFloat)origin :(CGFloat)size;
 - (NSArray*) map:(NSArray*)array;
 - (void)handleResize;
+- (void)setSize:(CGFloat)size;
+
 
 
 

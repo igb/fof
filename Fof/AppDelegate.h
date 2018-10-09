@@ -12,6 +12,10 @@
 @property NSArray* mappedPoints;
 
 - (IBAction)generateCode:(id)sender;
+- (IBAction)increaseGridScale:(id)sender;
+- (IBAction)decreaseGridScale:(id)sender;
+- (IBAction)generateCode:(id)sender;
+
 - (void)setMappedPoints:(NSArray*)mappedPoints;
 
 @end
