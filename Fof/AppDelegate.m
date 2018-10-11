@@ -28,13 +28,16 @@
 }
 
 - (IBAction)generateCode:(id)sender {
-    NSLog(@"%@", sender);
+    NSMenuItem* menuItem = sender;
+    NSString* lang = [menuItem title];
+    
     if (self.mappedPoints != nil) {
-        JavaCodeGenerator* generator = [[JavaCodeGenerator alloc] init];
-        NSString* generatedCode = [generator generate:self.mappedPoints];
-        
+       
         // create the save panel
         NSSavePanel *panel = [NSSavePanel savePanel];
+        
+        
+        
         
         // set a new file name
         [panel setNameFieldStringValue:@"Fof.java"];
@@ -44,13 +47,23 @@
             
             if (result == NSModalResponseOK) {
                 
+                
+                
+                
                 // create a file namaner and grab the save panel's returned URL
                 NSURL *saveURL = [panel URL];
+                NSString* className = [[[panel nameFieldStringValue] componentsSeparatedByString:@"."] objectAtIndex:0];
+                // generate code
+                
+                JavaCodeGenerator* generator = [[JavaCodeGenerator alloc] init];
+                NSString* generatedCode = [generator generate:self.mappedPoints :className];
+                
+                
+                
                 [generatedCode writeToURL:saveURL atomically:YES];
                 NSLog(@"%@", saveURL);
                 
-                // then copy a previous file to the new location
-               // [manager copyItemAtURL:self.myURL toURL:saveURL error:nil];
+               
             }
         }];
         

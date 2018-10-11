@@ -10,11 +10,13 @@
 
 @implementation JavaCodeGenerator
 
--(NSString*)generate:(NSArray*)points {
+-(NSString*)generate:(NSArray*)points :(NSString*)name{
     NSMutableString* stringBuffer = [[NSMutableString alloc] init];
     
     [stringBuffer appendString:@"import java.awt.geom.*;\n\n"];
-    [stringBuffer appendString:@"public class Fof {\n"];
+    [stringBuffer appendString:@"public class "];
+     [stringBuffer appendString:name];
+     [stringBuffer appendString:@" {\n"];
     [stringBuffer appendString:@"\tpublic static Point2D.Double[] points = {\n"];
     for (int i =0; i < points.count; i++) {
         NSPoint point = [[points objectAtIndex:i] pointValue];

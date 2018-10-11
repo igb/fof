@@ -10,6 +10,6 @@
 
 @protocol CodeGenerator <NSObject>
 
--(NSString*)generate:(NSArray*)points;
+-(NSString*)generate:(NSArray*)points :(NSString*) name;
 
 @end
