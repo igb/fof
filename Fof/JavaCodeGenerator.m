@@ -62,6 +62,14 @@
     [stringBuffer appendString:@"\t\treturn null;\n"];
     [stringBuffer appendString:@"\t}\n\n"];
 
+    
+    // get y for x
+    
+    [stringBuffer appendString:@"\tpublic Double getYforX(Double x) {\n"];
+    [stringBuffer appendString:@"\t\tPoint2D.Double a = findA(x, points);\n"];
+    [stringBuffer appendString:@"\t\tPoint2D.Double b = findB(x, points);\n"];
+    [stringBuffer appendString:@"\t\treturn interpolate(x, a, b);\n"];
+    [stringBuffer appendString:@"\t}\n\n"];
 
     // PSVM
     [stringBuffer appendString:@"\tpublic static void main(String[] args) {\n"];

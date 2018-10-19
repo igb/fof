@@ -53,6 +53,7 @@
                 // create a file namaner and grab the save panel's returned URL
                 NSURL *saveURL = [panel URL];
                 NSString* className = [[[panel nameFieldStringValue] componentsSeparatedByString:@"."] objectAtIndex:0];
+                
                 // generate code
                 
                 JavaCodeGenerator* generator = [[JavaCodeGenerator alloc] init];
@@ -75,6 +76,49 @@
 }
 
 
+
+-(IBAction)captureImage:(id)sender {
+    
+    NSSavePanel *imageSavePanel    = [NSSavePanel savePanel];
+    [imageSavePanel setAllowedFileTypes:[NSArray arrayWithObjects:@"png", nil]];
+    [imageSavePanel setExtensionHidden:NO];
+    
+    
+    int tvarInt    = [imageSavePanel runModal];
+    
+    if(tvarInt == NSOKButton){
+        NSLog(@"doSaveAs we have an OK button");
+    } else if(tvarInt == NSCancelButton) {
+        NSLog(@"doSaveAs we have a Cancel button");
+        return;
+    } else {
+        NSLog(@"doSaveAs tvarInt not equal 1 or zero = %3d",tvarInt);
+        return;
+    } // end if
+    
+    NSString * tvarDirectory = [imageSavePanel directory];
+    NSLog(@"doSaveAs directory = %@",tvarDirectory);
+    
+    NSString * tvarFilename = [imageSavePanel filename];
+    NSLog(@"doSaveAs filename = %@",tvarFilename);
+    
+    
+    
+    
+    
+    NSLog(@"snappers");
+    NSView *webFrameViewDocView = [[[[NSApplication sharedApplication] windows] objectAtIndex:0] contentView];
+    NSRect cacheRect = [webFrameViewDocView bounds];
+    NSBitmapImageRep *bitmapRep = [webFrameViewDocView bitmapImageRepForCachingDisplayInRect:cacheRect];
+    [webFrameViewDocView cacheDisplayInRect:cacheRect toBitmapImageRep:bitmapRep];
+    
+    NSData *data = [bitmapRep representationUsingType: NSPNGFileType properties: nil];
+    [data writeToURL:[imageSavePanel URL] atomically: NO];
+    NSLog(@"done %@", webFrameViewDocView);
+    
+    
+}
+
 -(void)alertAboutNoData {
     NSAlert *alert = [[NSAlert alloc] init];
     [alert addButtonWithTitle:@"OK"];
@@ -96,4 +140,18 @@
     [grid setSize:(grid.size / 2)];
     [grid handleResize];
 }
+
+-(IBAction)showTickNumbers:(id)sender {
+    Grid* grid = [[[[NSApplication sharedApplication] windows] objectAtIndex:0] contentView];
+    [grid setShowXnumbers:!grid.showXnumbers];
+    [grid setShowYnumbers:!grid.showYnumbers];
+    if (grid.showXnumbers && grid.showYnumbers) {
+        [sender setState:NSControlStateValueOn];
+    } else {
+        [sender setState:NSControlStateValueOff];
+    }
+    [grid handleResize];
+
+}
+
 @end

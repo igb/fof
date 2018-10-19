@@ -15,6 +15,9 @@
     @property CGFloat yAxis;
     @property CGFloat size;
     @property CGFloat maxX;
+    @property BOOL showXnumbers;
+    @property BOOL showYnumbers;
+
 
 
 

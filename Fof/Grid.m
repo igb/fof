@@ -19,6 +19,8 @@
     if (self)
     {
         self.size = 20;
+        self.showXnumbers = FALSE;
+        self.showYnumbers = FALSE;
     }
     
     return self;
@@ -53,7 +55,7 @@
     for (int x=BORDER; x<frame.size.width - BORDER; x = x + self.size)
     {
         
-
+        
         CGFloat x_start_x = x;
         CGFloat x_start_y = BORDER;
         CGFloat x_end_x = x;
@@ -148,6 +150,43 @@
     [[NSColor orangeColor] setStroke];
     
     [yAxis stroke];
+    
+    
+    // DRAW X NUMBERS
+    if (self.showXnumbers) {
+        
+        for (int x=BORDER; x<frame.size.width - BORDER; x = x + self.size)
+        {
+            
+            //Draw Text
+            CGRect textRect = CGRectMake(x + (self.size / 5), self.yAxis - (self.size), self.size, self.size);
+            NSMutableParagraphStyle* textStyle = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
+            textStyle.alignment = NSTextAlignmentLeft;
+            NSDictionary* textFontAttributes = @{NSFontAttributeName: [NSFont fontWithName: @"Helvetica" size: (int)(self.size / 2)], NSForegroundColorAttributeName: NSColor.redColor, NSParagraphStyleAttributeName: textStyle};
+            
+            [[NSString stringWithFormat:@"%d", (int)[self transformX:x]]  drawInRect: textRect withAttributes: textFontAttributes];
+            
+        }
+    }
+    
+    // DRAW Y NUMBERS
+    if (self.showYnumbers) {
+        for (int y=BORDER; y<frame.size.height - BORDER; y = y + self.size)
+        {
+            
+            
+            //Draw Text
+            CGRect textRect = CGRectMake(self.xAxis - self.size, y , self.size, self.size);
+            NSMutableParagraphStyle* textStyle = NSMutableParagraphStyle.defaultParagraphStyle.mutableCopy;
+            textStyle.alignment = NSTextAlignmentLeft;
+            NSDictionary* textFontAttributes = @{NSFontAttributeName: [NSFont fontWithName: @"Helvetica" size: (int)(self.size / 2)], NSForegroundColorAttributeName: NSColor.redColor, NSParagraphStyleAttributeName: textStyle};
+            
+            [[NSString stringWithFormat:@"%d", (int)[self transformY:y]]  drawInRect: textRect withAttributes: textFontAttributes];
+            
+            
+        }
+    }
+    
     
     
     // DRAW LINE

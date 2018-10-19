@@ -103,6 +103,13 @@
                                                 <action selector="revertDocumentToSaved:" target="Ady-hI-5gd" id="iJ3-Pv-kwq"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="RoC-Va-p2g"/>
+                                        <menuItem title="Save Snapshot" keyEquivalent="s" id="E8c-An-9Vg">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="captureImage:" target="Voe-Tx-rLC" id="J0n-pM-2Za"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="aJh-i4-bef"/>
                                         <menuItem title="Page Setup…" keyEquivalent="P" id="qIS-W8-SiK">
                                             <modifierMask key="keyEquivalentModifierMask" shift="YES" command="YES"/>
@@ -629,16 +636,21 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="b2H-ZC-k4U"/>
-                                        <menuItem title="Increase Grid Scale" keyEquivalent="k" id="Yx4-II-a8T">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        <menuItem title="Zoom In" keyEquivalent="l" id="Yx4-II-a8T">
                                             <connections>
                                                 <action selector="increaseGridScale:" target="Ady-hI-5gd" id="AsY-nk-DJ1"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="Decrease Grid Scale" keyEquivalent="j" id="RwB-e7-gPO">
-                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                        <menuItem title="Zoom Out" keyEquivalent="k" id="RwB-e7-gPO">
                                             <connections>
                                                 <action selector="decreaseGridScale:" target="Ady-hI-5gd" id="iQQ-Ya-UDA"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="Nzi-m1-PiQ"/>
+                                        <menuItem title="Number X &amp; Y Axes" id="0aT-gl-8z2">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="showTickNumbers:" target="Voe-Tx-rLC" id="ZXI-Pt-umR"/>
                                             </connections>
                                         </menuItem>
                                     </items>

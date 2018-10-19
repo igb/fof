@@ -14,7 +14,10 @@
 - (IBAction)generateCode:(id)sender;
 - (IBAction)increaseGridScale:(id)sender;
 - (IBAction)decreaseGridScale:(id)sender;
-- (IBAction)generateCode:(id)sender;
+-(IBAction)captureImage:(id)sender;
+-(IBAction)showTickNumbers:(id)sender;
+
+
 
 - (void)setMappedPoints:(NSArray*)mappedPoints;
 
