@@ -41,9 +41,11 @@ object Fof {
 
 
   def interpolate(x: Double, a:(Double, Double), b:(Double, Double)): Double = {
-		   println( a._2 + " + ((" + b._2 + " - " + a._2 + ") *   ((" + x + " - " + a._1 + ") / (" + b._1 + " - " + a._1 + ")))")
-		   a._2 + ((b._2 - a._2) *   ((x - a._1) / (b._1 - a._1)))
-		  
+      		   if (x == a._1) {
+		      a._2
+		   } else {
+		      a._2 + ((b._2 - a._2) *   ((x - a._1) / (b._1 - a._1)))
+		   }
 	}
 
 
