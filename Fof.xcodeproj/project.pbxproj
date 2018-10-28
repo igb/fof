@@ -10,6 +10,18 @@
 		104CC71E216C54AD00F6E8BC /* FofWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104CC71D216C54AD00F6E8BC /* FofWindowController.m */; };
 		104CC71F216C54AD00F6E8BC /* FofWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104CC71D216C54AD00F6E8BC /* FofWindowController.m */; };
 		104CC720216C54AD00F6E8BC /* FofWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104CC71D216C54AD00F6E8BC /* FofWindowController.m */; };
+		105A15852184B955000E50E1 /* FofCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 105A15842184B955000E50E1 /* FofCodeGenerator.m */; };
+		105A15862184B955000E50E1 /* FofCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 105A15842184B955000E50E1 /* FofCodeGenerator.m */; };
+		105A15872184B955000E50E1 /* FofCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 105A15842184B955000E50E1 /* FofCodeGenerator.m */; };
+		105A158A2184BC2D000E50E1 /* ScalaCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 105A15892184BC2D000E50E1 /* ScalaCodeGenerator.m */; };
+		105A158B2184BC2D000E50E1 /* ScalaCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 105A15892184BC2D000E50E1 /* ScalaCodeGenerator.m */; };
+		105A158C2184BC2D000E50E1 /* ScalaCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 105A15892184BC2D000E50E1 /* ScalaCodeGenerator.m */; };
+		105A158F2184BCF8000E50E1 /* JavaScriptCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 105A158E2184BCF8000E50E1 /* JavaScriptCodeGenerator.m */; };
+		105A15902184BCF8000E50E1 /* JavaScriptCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 105A158E2184BCF8000E50E1 /* JavaScriptCodeGenerator.m */; };
+		105A15912184BCF8000E50E1 /* JavaScriptCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 105A158E2184BCF8000E50E1 /* JavaScriptCodeGenerator.m */; };
+		105A159421863165000E50E1 /* ScalaTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 105A159321863165000E50E1 /* ScalaTemplate.txt */; };
+		105A159521863165000E50E1 /* ScalaTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 105A159321863165000E50E1 /* ScalaTemplate.txt */; };
+		105A159621863165000E50E1 /* ScalaTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 105A159321863165000E50E1 /* ScalaTemplate.txt */; };
 		10BCA953214F0224009E5911 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA952214F0224009E5911 /* AppDelegate.m */; };
 		10BCA956214F0224009E5911 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA955214F0224009E5911 /* ViewController.m */; };
 		10BCA958214F0227009E5911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BCA957214F0227009E5911 /* Assets.xcassets */; };
@@ -42,6 +54,13 @@
 /* Begin PBXFileReference section */
 		104CC71C216C54AD00F6E8BC /* FofWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FofWindowController.h; sourceTree = "<group>"; };
 		104CC71D216C54AD00F6E8BC /* FofWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FofWindowController.m; sourceTree = "<group>"; };
+		105A15832184B955000E50E1 /* FofCodeGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FofCodeGenerator.h; sourceTree = "<group>"; };
+		105A15842184B955000E50E1 /* FofCodeGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FofCodeGenerator.m; sourceTree = "<group>"; };
+		105A15882184BC2D000E50E1 /* ScalaCodeGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScalaCodeGenerator.h; sourceTree = "<group>"; };
+		105A15892184BC2D000E50E1 /* ScalaCodeGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScalaCodeGenerator.m; sourceTree = "<group>"; };
+		105A158D2184BCF8000E50E1 /* JavaScriptCodeGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JavaScriptCodeGenerator.h; sourceTree = "<group>"; };
+		105A158E2184BCF8000E50E1 /* JavaScriptCodeGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JavaScriptCodeGenerator.m; sourceTree = "<group>"; };
+		105A159321863165000E50E1 /* ScalaTemplate.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ScalaTemplate.txt; sourceTree = "<group>"; };
 		10BCA94E214F0224009E5911 /* Fof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fof.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BCA951214F0224009E5911 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		10BCA952214F0224009E5911 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -90,6 +109,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		105A159221863114000E50E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				105A159321863165000E50E1 /* ScalaTemplate.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		10BCA945214F0224009E5911 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +140,7 @@
 		10BCA950214F0224009E5911 /* Fof */ = {
 			isa = PBXGroup;
 			children = (
+				105A159221863114000E50E1 /* Resources */,
 				10BCA951214F0224009E5911 /* AppDelegate.h */,
 				10BCA952214F0224009E5911 /* AppDelegate.m */,
 				10BCA954214F0224009E5911 /* ViewController.h */,
@@ -125,10 +153,16 @@
 				10BCA98321527781009E5911 /* Grid.h */,
 				10BCA98421527781009E5911 /* Grid.m */,
 				10BCA9912162971B009E5911 /* CodeGenerator.h */,
+				105A15832184B955000E50E1 /* FofCodeGenerator.h */,
+				105A15842184B955000E50E1 /* FofCodeGenerator.m */,
 				10BCA992216297BE009E5911 /* JavaCodeGenerator.h */,
 				10BCA993216297BE009E5911 /* JavaCodeGenerator.m */,
 				104CC71C216C54AD00F6E8BC /* FofWindowController.h */,
 				104CC71D216C54AD00F6E8BC /* FofWindowController.m */,
+				105A15882184BC2D000E50E1 /* ScalaCodeGenerator.h */,
+				105A15892184BC2D000E50E1 /* ScalaCodeGenerator.m */,
+				105A158D2184BCF8000E50E1 /* JavaScriptCodeGenerator.h */,
+				105A158E2184BCF8000E50E1 /* JavaScriptCodeGenerator.m */,
 			);
 			path = Fof;
 			sourceTree = "<group>";
@@ -255,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10BCA958214F0227009E5911 /* Assets.xcassets in Resources */,
+				105A159421863165000E50E1 /* ScalaTemplate.txt in Resources */,
 				10BCA95B214F0227009E5911 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				105A159521863165000E50E1 /* ScalaTemplate.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				105A159621863165000E50E1 /* ScalaTemplate.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +319,11 @@
 			files = (
 				10BCA956214F0224009E5911 /* ViewController.m in Sources */,
 				10BCA95E214F0227009E5911 /* main.m in Sources */,
+				105A158F2184BCF8000E50E1 /* JavaScriptCodeGenerator.m in Sources */,
 				10BCA994216297BE009E5911 /* JavaCodeGenerator.m in Sources */,
 				104CC71E216C54AD00F6E8BC /* FofWindowController.m in Sources */,
+				105A15852184B955000E50E1 /* FofCodeGenerator.m in Sources */,
+				105A158A2184BC2D000E50E1 /* ScalaCodeGenerator.m in Sources */,
 				10BCA953214F0224009E5911 /* AppDelegate.m in Sources */,
 				10BCA98521527781009E5911 /* Grid.m in Sources */,
 			);
@@ -294,8 +334,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				104CC71F216C54AD00F6E8BC /* FofWindowController.m in Sources */,
+				105A158B2184BC2D000E50E1 /* ScalaCodeGenerator.m in Sources */,
 				10BCA995216297BE009E5911 /* JavaCodeGenerator.m in Sources */,
+				105A15862184B955000E50E1 /* FofCodeGenerator.m in Sources */,
 				10BCA969214F0227009E5911 /* FofTests.m in Sources */,
+				105A15902184BCF8000E50E1 /* JavaScriptCodeGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +346,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				105A15912184BCF8000E50E1 /* JavaScriptCodeGenerator.m in Sources */,
 				10BCA974214F0227009E5911 /* FofUITests.m in Sources */,
+				105A158C2184BC2D000E50E1 /* ScalaCodeGenerator.m in Sources */,
+				105A15872184B955000E50E1 /* FofCodeGenerator.m in Sources */,
 				104CC720216C54AD00F6E8BC /* FofWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

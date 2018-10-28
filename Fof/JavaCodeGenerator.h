@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CodeGenerator.h"
+#import "FofCodeGenerator.h"
 
-@interface JavaCodeGenerator : NSObject <CodeGenerator>
+@interface JavaCodeGenerator : FofCodeGenerator
 
 
 @end

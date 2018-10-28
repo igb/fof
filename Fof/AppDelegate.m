@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "CodeGenerator.h"
 #import "JavaCodeGenerator.h"
+#import "ScalaCodeGenerator.h"
 #import "Grid.h"
 
 
@@ -36,12 +37,20 @@
         // create the save panel
         NSSavePanel *panel = [NSSavePanel savePanel];
         
+        FofCodeGenerator* generator = nil;
+        
+        if ([lang isEqualToString:@"Java"]) {
+            generator = [[JavaCodeGenerator alloc] init];
+            [panel setNameFieldStringValue:@"Fof.java"];
+        } else if ([lang isEqualToString:@"Scala"]) {
+            generator = [[ScalaCodeGenerator alloc] init];
+            [panel setNameFieldStringValue:@"Fof.scala"];
+            
+        }
         
         
         
-        // set a new file name
-        [panel setNameFieldStringValue:@"Fof.java"];
-        
+     
         // display the panel
         [panel beginSheetModalForWindow:[[NSApplication sharedApplication] keyWindow]  completionHandler:^(NSInteger result) {
             
@@ -56,7 +65,8 @@
                 
                 // generate code
                 
-                JavaCodeGenerator* generator = [[JavaCodeGenerator alloc] init];
+               
+                
                 NSString* generatedCode = [generator generate:self.mappedPoints :className];
                 
                 

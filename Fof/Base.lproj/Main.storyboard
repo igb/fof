@@ -693,6 +693,9 @@
                                         </menuItem>
                                         <menuItem title="Scala" id="WSG-ld-0B8">
                                             <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="generateCode:" target="Ady-hI-5gd" id="OVE-R9-ImQ"/>
+                                            </connections>
                                         </menuItem>
                                         <menuItem title="JavaScript" id="Ctx-Ka-lP1">
                                             <modifierMask key="keyEquivalentModifierMask"/>
