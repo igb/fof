@@ -3,16 +3,10 @@ object Fof {
   
   def main(args: Array[String]): Unit = {
     val x: Double  = args(0).toDouble
-    val a: Option[(Double, Double)]  = findA(x)
-    val b: Option[(Double, Double)]  = findB(x)
-
-    if (a.isDefined && b.isDefined) {
-       println("A: " + a.get)
-       val y = interpolate(x, a.get, b.get)
-       println("   (" + x + ", " + y + ")")
-       println("B: " + b.get)
-    }
-   
+    val y: Double = getYforX(x)
+    
+       println(y)
+      
   }
   
   def findA(x: Double): Option[(Double, Double)] = {
@@ -49,45 +43,18 @@ object Fof {
 	}
 
 
-/*
-	public static Double interpolate(Double x, Point2D.Double a, Point2D.Double b) {
-		return a.y + ((b.y - a.y) *   ((x - a.x) / (b.x - a.x)));
+
+  def getYforX(x: Double): Double = {
+  
+	val a = findA(x)
+	val b = findB(x)
+	if (a.isDefined && b.isDefined) {
+	   interpolate(x, a.get, b.get)
+	} else {
+	   Double.NaN
 	}
+  
+  }
 
-
-	public static Point2D.Double findA(Double x, Point2D.Double[] points) {
-		Point2D.Double a = null;
-		for (int i = 0; i < points.length; i++) {
-			if (points[i].x >= x) {
-				return a;
-
-			} else {
-				a = points[i];
-			}
-
-		}
-		return a;
-	}
-
-	public static Point2D.Double findB(Double x, Point2D.Double[] points) {
-		for (int i = 0; i < points.length; i++) {
-			if (points[i].x > x) {
-				return points[i];
-			}
-		
-		}
-		return null;
-	}
-
-	public Double getYforX(Double x) {
-		Point2D.Double a = findA(x, points);
-		Point2D.Double b = findB(x, points);
-		return interpolate(x, a, b);
-	}
-
-*/
-
-
-//interpolate
 
 }
