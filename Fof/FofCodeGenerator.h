@@ -10,5 +10,7 @@
 #import "CodeGenerator.h"
 
 @interface FofCodeGenerator : NSObject <CodeGenerator>
+-(NSString*)pointsArrayToString:(NSString*)format :(NSArray*)points;
+-(NSString*)getTemplate:(NSString*)name;
 
 @end

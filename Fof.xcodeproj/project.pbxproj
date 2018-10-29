@@ -22,6 +22,9 @@
 		105A159421863165000E50E1 /* ScalaTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 105A159321863165000E50E1 /* ScalaTemplate.txt */; };
 		105A159521863165000E50E1 /* ScalaTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 105A159321863165000E50E1 /* ScalaTemplate.txt */; };
 		105A159621863165000E50E1 /* ScalaTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 105A159321863165000E50E1 /* ScalaTemplate.txt */; };
+		10AF640F218759AF00FE6572 /* JavaScriptTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 10AF640E218759AF00FE6572 /* JavaScriptTemplate.txt */; };
+		10AF6410218759AF00FE6572 /* JavaScriptTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 10AF640E218759AF00FE6572 /* JavaScriptTemplate.txt */; };
+		10AF6411218759AF00FE6572 /* JavaScriptTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 10AF640E218759AF00FE6572 /* JavaScriptTemplate.txt */; };
 		10BCA953214F0224009E5911 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA952214F0224009E5911 /* AppDelegate.m */; };
 		10BCA956214F0224009E5911 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA955214F0224009E5911 /* ViewController.m */; };
 		10BCA958214F0227009E5911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BCA957214F0227009E5911 /* Assets.xcassets */; };
@@ -61,6 +64,7 @@
 		105A158D2184BCF8000E50E1 /* JavaScriptCodeGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JavaScriptCodeGenerator.h; sourceTree = "<group>"; };
 		105A158E2184BCF8000E50E1 /* JavaScriptCodeGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JavaScriptCodeGenerator.m; sourceTree = "<group>"; };
 		105A159321863165000E50E1 /* ScalaTemplate.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ScalaTemplate.txt; sourceTree = "<group>"; };
+		10AF640E218759AF00FE6572 /* JavaScriptTemplate.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = JavaScriptTemplate.txt; sourceTree = "<group>"; };
 		10BCA94E214F0224009E5911 /* Fof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fof.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BCA951214F0224009E5911 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		10BCA952214F0224009E5911 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				105A159321863165000E50E1 /* ScalaTemplate.txt */,
+				10AF640E218759AF00FE6572 /* JavaScriptTemplate.txt */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 				10BCA958214F0227009E5911 /* Assets.xcassets in Resources */,
 				105A159421863165000E50E1 /* ScalaTemplate.txt in Resources */,
 				10BCA95B214F0227009E5911 /* Main.storyboard in Resources */,
+				10AF640F218759AF00FE6572 /* JavaScriptTemplate.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				105A159521863165000E50E1 /* ScalaTemplate.txt in Resources */,
+				10AF6410218759AF00FE6572 /* JavaScriptTemplate.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				105A159621863165000E50E1 /* ScalaTemplate.txt in Resources */,
+				10AF6411218759AF00FE6572 /* JavaScriptTemplate.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
