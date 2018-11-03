@@ -1,1 +1,3 @@
-Fof is a MacOS application that captures the drawn X and Y points and creates a rough approximation of the underlying function by generating arrays of the drawn co-ordinates and creating interpolations in generated Java code. Other language support is planned (Scala, JavaScript, Erlang) in futire releases.
+Fof is a MacOS application that captures the drawn X and Y points and creates a rough approximation of the underlying function by generating arrays of the drawn co-ordinates and creating interpolations in generated Java, JavaScript, Scala, and Python code.
+
+Along with generating code you can also export a PNG of the graph.
