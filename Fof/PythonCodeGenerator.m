@@ -13,7 +13,7 @@
 
 -(NSString*)generate:(NSArray*)points :(NSString*)name{
     NSMutableString* code = [NSMutableString stringWithString:@"class Fof:\n    def __init__(self):\n"];
-    [code appendString:@"        self.points=["];
+    [code appendString:@"        self.points=[\n"];
     NSString* format = @"            Point(%f, %f)";
     [code appendString:[self pointsArrayToString:format :points]];
     [code appendString:@"        ]\n"];
