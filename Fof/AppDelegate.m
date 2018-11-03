@@ -11,6 +11,7 @@
 #import "JavaCodeGenerator.h"
 #import "ScalaCodeGenerator.h"
 #import "JavaScriptCodeGenerator.h"
+#import "PythonCodeGenerator.h"
 #import "Grid.h"
 
 
@@ -49,6 +50,9 @@
         } else if ([lang isEqualToString:@"JavaScript"]) {
             generator = [[JavaScriptCodeGenerator alloc] init];
             [panel setNameFieldStringValue:@"Fof.js"];
+        } else if ([lang isEqualToString:@"Python"]) {
+            generator = [[PythonCodeGenerator alloc] init];
+            [panel setNameFieldStringValue:@"Fof.py"];
         }
         
         

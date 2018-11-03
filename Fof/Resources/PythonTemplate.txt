@@ -1,8 +1,4 @@
-class Fof:
-    def __init__(self):
-        self.points=[
-            Point(0.1, 3.452),
-            Point(3.23, 453.34)]
+
 
     def findA(self, x):
         a = None

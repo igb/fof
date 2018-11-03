@@ -22,9 +22,15 @@
 		105A159421863165000E50E1 /* ScalaTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 105A159321863165000E50E1 /* ScalaTemplate.txt */; };
 		105A159521863165000E50E1 /* ScalaTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 105A159321863165000E50E1 /* ScalaTemplate.txt */; };
 		105A159621863165000E50E1 /* ScalaTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 105A159321863165000E50E1 /* ScalaTemplate.txt */; };
+		1095A35B218C947400E1A4FC /* PythonTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1095A35A218C947400E1A4FC /* PythonTemplate.txt */; };
+		1095A35C218C947400E1A4FC /* PythonTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1095A35A218C947400E1A4FC /* PythonTemplate.txt */; };
+		1095A35D218C947400E1A4FC /* PythonTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1095A35A218C947400E1A4FC /* PythonTemplate.txt */; };
 		10AF640F218759AF00FE6572 /* JavaScriptTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 10AF640E218759AF00FE6572 /* JavaScriptTemplate.txt */; };
 		10AF6410218759AF00FE6572 /* JavaScriptTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 10AF640E218759AF00FE6572 /* JavaScriptTemplate.txt */; };
 		10AF6411218759AF00FE6572 /* JavaScriptTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 10AF640E218759AF00FE6572 /* JavaScriptTemplate.txt */; };
+		10AF641921880CE900FE6572 /* PythonCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AF641821880CE900FE6572 /* PythonCodeGenerator.m */; };
+		10AF641A21880CE900FE6572 /* PythonCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AF641821880CE900FE6572 /* PythonCodeGenerator.m */; };
+		10AF641B21880CE900FE6572 /* PythonCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AF641821880CE900FE6572 /* PythonCodeGenerator.m */; };
 		10BCA953214F0224009E5911 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA952214F0224009E5911 /* AppDelegate.m */; };
 		10BCA956214F0224009E5911 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA955214F0224009E5911 /* ViewController.m */; };
 		10BCA958214F0227009E5911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BCA957214F0227009E5911 /* Assets.xcassets */; };
@@ -64,7 +70,10 @@
 		105A158D2184BCF8000E50E1 /* JavaScriptCodeGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JavaScriptCodeGenerator.h; sourceTree = "<group>"; };
 		105A158E2184BCF8000E50E1 /* JavaScriptCodeGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JavaScriptCodeGenerator.m; sourceTree = "<group>"; };
 		105A159321863165000E50E1 /* ScalaTemplate.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ScalaTemplate.txt; sourceTree = "<group>"; };
+		1095A35A218C947400E1A4FC /* PythonTemplate.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = PythonTemplate.txt; sourceTree = "<group>"; };
 		10AF640E218759AF00FE6572 /* JavaScriptTemplate.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = JavaScriptTemplate.txt; sourceTree = "<group>"; };
+		10AF641721880CE900FE6572 /* PythonCodeGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PythonCodeGenerator.h; sourceTree = "<group>"; };
+		10AF641821880CE900FE6572 /* PythonCodeGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PythonCodeGenerator.m; sourceTree = "<group>"; };
 		10BCA94E214F0224009E5911 /* Fof.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fof.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BCA951214F0224009E5911 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		10BCA952214F0224009E5911 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -118,6 +127,7 @@
 			children = (
 				105A159321863165000E50E1 /* ScalaTemplate.txt */,
 				10AF640E218759AF00FE6572 /* JavaScriptTemplate.txt */,
+				1095A35A218C947400E1A4FC /* PythonTemplate.txt */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -168,6 +178,8 @@
 				105A15892184BC2D000E50E1 /* ScalaCodeGenerator.m */,
 				105A158D2184BCF8000E50E1 /* JavaScriptCodeGenerator.h */,
 				105A158E2184BCF8000E50E1 /* JavaScriptCodeGenerator.m */,
+				10AF641721880CE900FE6572 /* PythonCodeGenerator.h */,
+				10AF641821880CE900FE6572 /* PythonCodeGenerator.m */,
 			);
 			path = Fof;
 			sourceTree = "<group>";
@@ -296,6 +308,7 @@
 				10BCA958214F0227009E5911 /* Assets.xcassets in Resources */,
 				105A159421863165000E50E1 /* ScalaTemplate.txt in Resources */,
 				10BCA95B214F0227009E5911 /* Main.storyboard in Resources */,
+				1095A35B218C947400E1A4FC /* PythonTemplate.txt in Resources */,
 				10AF640F218759AF00FE6572 /* JavaScriptTemplate.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +319,7 @@
 			files = (
 				105A159521863165000E50E1 /* ScalaTemplate.txt in Resources */,
 				10AF6410218759AF00FE6572 /* JavaScriptTemplate.txt in Resources */,
+				1095A35C218C947400E1A4FC /* PythonTemplate.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +329,7 @@
 			files = (
 				105A159621863165000E50E1 /* ScalaTemplate.txt in Resources */,
 				10AF6411218759AF00FE6572 /* JavaScriptTemplate.txt in Resources */,
+				1095A35D218C947400E1A4FC /* PythonTemplate.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +344,7 @@
 				10BCA95E214F0227009E5911 /* main.m in Sources */,
 				105A158F2184BCF8000E50E1 /* JavaScriptCodeGenerator.m in Sources */,
 				10BCA994216297BE009E5911 /* JavaCodeGenerator.m in Sources */,
+				10AF641921880CE900FE6572 /* PythonCodeGenerator.m in Sources */,
 				104CC71E216C54AD00F6E8BC /* FofWindowController.m in Sources */,
 				105A15852184B955000E50E1 /* FofCodeGenerator.m in Sources */,
 				105A158A2184BC2D000E50E1 /* ScalaCodeGenerator.m in Sources */,
@@ -347,6 +363,7 @@
 				105A15862184B955000E50E1 /* FofCodeGenerator.m in Sources */,
 				10BCA969214F0227009E5911 /* FofTests.m in Sources */,
 				105A15902184BCF8000E50E1 /* JavaScriptCodeGenerator.m in Sources */,
+				10AF641A21880CE900FE6572 /* PythonCodeGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +375,7 @@
 				10BCA974214F0227009E5911 /* FofUITests.m in Sources */,
 				105A158C2184BC2D000E50E1 /* ScalaCodeGenerator.m in Sources */,
 				105A15872184B955000E50E1 /* FofCodeGenerator.m in Sources */,
+				10AF641B21880CE900FE6572 /* PythonCodeGenerator.m in Sources */,
 				104CC720216C54AD00F6E8BC /* FofWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
