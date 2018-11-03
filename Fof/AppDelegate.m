@@ -154,8 +154,14 @@
 
 - (IBAction)decreaseGridScale:(id)sender {
     Grid* grid = [[[[NSApplication sharedApplication] windows] objectAtIndex:0] contentView];
-    [grid setSize:(grid.size / 2)];
-    [grid handleResize];
+    
+    if (grid.size == 1.250000) { //adding this check because at a certain scale the UI hangs as it tries to render impossibly small ticks
+        // do nothing
+        NSLog(@"too small!");
+    } else {
+        [grid setSize:(grid.size / 2)];
+        [grid handleResize];
+    }
 }
 
 -(IBAction)showTickNumbers:(id)sender {
