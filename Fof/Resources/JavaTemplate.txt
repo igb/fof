@@ -1,4 +1,9 @@
+import java.awt.geom.*;
 
+public class %@ {
+	public static Point2D.Double[] points = {
+		%@
+	};
 
 	public static Double interpolate(Double x, Point2D.Double a, Point2D.Double b) {
 		return a.y + ((b.y - a.y) *   ((x - a.x) / (b.x - a.x)));
