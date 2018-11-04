@@ -11,13 +11,8 @@
 @implementation ScalaCodeGenerator
 
 -(NSString*)generate:(NSArray*)points :(NSString*)name{
-    NSMutableString* code = [NSMutableString stringWithFormat:@"object %@ {\n", name];
-    [code appendString:@"\nval points = Array(\n"];
     NSString* format = @"\t\t(%f, %f)";
-    [code appendString:[self pointsArrayToString:format :points]];
-    [code appendString:@")\n"];
-    [code appendString:[self getTemplate:@"ScalaTemplate"]];
-    return code;
+   return [NSString stringWithFormat:[self getTemplate:@"ScalaTemplate"], name, [self pointsArrayToString:format :points]];
 }
 
 @end

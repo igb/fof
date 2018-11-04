@@ -1,3 +1,8 @@
+object %@ {
+
+val points = Array(
+		%@
+)
 
     def main(args: Array[String]): Unit = {
         val x: Double  = args(0).toDouble
