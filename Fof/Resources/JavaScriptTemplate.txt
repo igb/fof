@@ -1,3 +1,6 @@
+var points = [ %@
+
+]
 
 function findA(x, points) {
     var  a = null;

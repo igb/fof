@@ -12,13 +12,8 @@
 
 
 -(NSString*)generate:(NSArray*)points :(NSString*)name{
-    NSMutableString* code = [NSMutableString stringWithString:@"var points = ["];
     NSString* format = @"\t{x: %f, y: %f}";
-    [code appendString:[self pointsArrayToString:format :points]];
-    [code appendString:@"]\n"];
-    
-    [code appendString:[self getTemplate:@"JavaScriptTemplate"]];
-    return code;
+    return [NSString stringWithFormat:[self getTemplate:@"JavaScriptTemplate"], [self pointsArrayToString:format :points]];
 }
 
 @end
