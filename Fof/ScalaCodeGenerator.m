@@ -13,19 +13,10 @@
 -(NSString*)generate:(NSArray*)points :(NSString*)name{
     NSMutableString* code = [NSMutableString stringWithFormat:@"object %@ {\n", name];
     [code appendString:@"\nval points = Array(\n"];
-    for (int i = 0; i < [points count]; i++) {
-        
-        NSPoint point = [[points objectAtIndex:i] pointValue];
-        [code appendFormat:@"\t\t(%f, %f)", point.x, point.y];
-        if (i != ([points count] - 1)) {
-            [code appendString:@","];
-        }
-        [code appendString:@"\n"];
-    }
+    NSString* format = @"\t\t(%f, %f)";
+    [code appendString:[self pointsArrayToString:format :points]];
     [code appendString:@")\n"];
-    NSBundle* bundle = [NSBundle mainBundle];
-    NSURL* template = [bundle URLForResource:@"ScalaTemplate" withExtension:@"txt"];
-    [code appendString:[NSString stringWithContentsOfURL:template encoding:NSUTF8StringEncoding error:nil]];
+    [code appendString:[self getTemplate:@"ScalaTemplate"]];
     return code;
 }
 
