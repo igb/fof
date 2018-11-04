@@ -41,6 +41,9 @@
 		10BCA98521527781009E5911 /* Grid.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA98421527781009E5911 /* Grid.m */; };
 		10BCA994216297BE009E5911 /* JavaCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA993216297BE009E5911 /* JavaCodeGenerator.m */; };
 		10BCA995216297BE009E5911 /* JavaCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA993216297BE009E5911 /* JavaCodeGenerator.m */; };
+		10E4C5A6218F7879004020DB /* JavaTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 10E4C5A5218F7879004020DB /* JavaTemplate.txt */; };
+		10E4C5A7218F7879004020DB /* JavaTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 10E4C5A5218F7879004020DB /* JavaTemplate.txt */; };
+		10E4C5A8218F7879004020DB /* JavaTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 10E4C5A5218F7879004020DB /* JavaTemplate.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +98,7 @@
 		10BCA9912162971B009E5911 /* CodeGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeGenerator.h; sourceTree = "<group>"; };
 		10BCA992216297BE009E5911 /* JavaCodeGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JavaCodeGenerator.h; sourceTree = "<group>"; };
 		10BCA993216297BE009E5911 /* JavaCodeGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JavaCodeGenerator.m; sourceTree = "<group>"; };
+		10E4C5A5218F7879004020DB /* JavaTemplate.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = JavaTemplate.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 				105A159321863165000E50E1 /* ScalaTemplate.txt */,
 				10AF640E218759AF00FE6572 /* JavaScriptTemplate.txt */,
 				1095A35A218C947400E1A4FC /* PythonTemplate.txt */,
+				10E4C5A5218F7879004020DB /* JavaTemplate.txt */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -305,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10E4C5A6218F7879004020DB /* JavaTemplate.txt in Resources */,
 				10BCA958214F0227009E5911 /* Assets.xcassets in Resources */,
 				105A159421863165000E50E1 /* ScalaTemplate.txt in Resources */,
 				10BCA95B214F0227009E5911 /* Main.storyboard in Resources */,
@@ -317,6 +323,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10E4C5A7218F7879004020DB /* JavaTemplate.txt in Resources */,
 				105A159521863165000E50E1 /* ScalaTemplate.txt in Resources */,
 				10AF6410218759AF00FE6572 /* JavaScriptTemplate.txt in Resources */,
 				1095A35C218C947400E1A4FC /* PythonTemplate.txt in Resources */,
@@ -327,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10E4C5A8218F7879004020DB /* JavaTemplate.txt in Resources */,
 				105A159621863165000E50E1 /* ScalaTemplate.txt in Resources */,
 				10AF6411218759AF00FE6572 /* JavaScriptTemplate.txt in Resources */,
 				1095A35D218C947400E1A4FC /* PythonTemplate.txt in Resources */,
