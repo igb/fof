@@ -13,6 +13,8 @@
 #import "JavaScriptCodeGenerator.h"
 #import "PythonCodeGenerator.h"
 #import "Grid.h"
+#import "ViewController.h"
+#import "FofWindowController.h"
 
 
 @interface AppDelegate ()
@@ -23,6 +25,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    self.isWindowOpen = true;
 }
 
 
@@ -92,31 +95,41 @@
     }
 }
 
-
+-(NSWindow*) getCurrentActiveWindow {
+    NSArray* windows = [[NSApplication sharedApplication] windows];
+    for (int i=0; i < [windows count]; i++) {
+        NSWindow* window = [windows objectAtIndex:i];
+        if ([window isVisible]) {
+            return window;
+        }
+    }
+    return nil;
+}
 
 -(IBAction)captureImage:(id)sender {
     
     NSSavePanel *imageSavePanel    = [NSSavePanel savePanel];
     [imageSavePanel setAllowedFileTypes:[NSArray arrayWithObjects:@"png", nil]];
     [imageSavePanel setExtensionHidden:NO];
+    [imageSavePanel setNameFieldStringValue:@"snapshot.png"];
     
     
-    int tvarInt    = [imageSavePanel runModal];
+    long tvarInt    = [imageSavePanel runModal];
     
-    if(tvarInt == NSOKButton){
+    if(tvarInt == NSModalResponseOK){
         NSLog(@"doSaveAs we have an OK button");
-    } else if(tvarInt == NSCancelButton) {
+    } else if(tvarInt == NSModalResponseCancel) {
         NSLog(@"doSaveAs we have a Cancel button");
         return;
     } else {
-        NSLog(@"doSaveAs tvarInt not equal 1 or zero = %3d",tvarInt);
+        NSLog(@"doSaveAs tvarInt not equal 1 or zero = %3ld",tvarInt);
         return;
     } // end if
     
-    NSString * tvarDirectory = [imageSavePanel directory];
+    NSURL * tvarDirectory = [imageSavePanel directoryURL];
     NSLog(@"doSaveAs directory = %@",tvarDirectory);
     
-    NSString * tvarFilename = [imageSavePanel filename];
+    NSURL * tvarFilename = [imageSavePanel URL];
     NSLog(@"doSaveAs filename = %@",tvarFilename);
     
     
@@ -124,13 +137,13 @@
     
     
     NSLog(@"snappers");
-    NSView *webFrameViewDocView = [[[[NSApplication sharedApplication] windows] objectAtIndex:0] contentView];
+    NSView *webFrameViewDocView = [[self getCurrentActiveWindow] contentView];
     NSRect cacheRect = [webFrameViewDocView bounds];
     NSBitmapImageRep *bitmapRep = [webFrameViewDocView bitmapImageRepForCachingDisplayInRect:cacheRect];
     [webFrameViewDocView cacheDisplayInRect:cacheRect toBitmapImageRep:bitmapRep];
     
     NSData *data = [bitmapRep representationUsingType: NSPNGFileType properties: nil];
-    [data writeToURL:[imageSavePanel URL] atomically: NO];
+    [data writeToURL:[imageSavePanel URL] atomically: YES];
     NSLog(@"done %@", webFrameViewDocView);
     
     
@@ -147,13 +160,13 @@
 }
 
 - (IBAction)increaseGridScale:(id)sender {
-    Grid* grid = [[[[NSApplication sharedApplication] windows] objectAtIndex:0] contentView];
+    Grid* grid = [[self getCurrentActiveWindow] contentView];
     [grid setSize:(grid.size * 2)];
     [grid handleResize];
 }
 
 - (IBAction)decreaseGridScale:(id)sender {
-    Grid* grid = [[[[NSApplication sharedApplication] windows] objectAtIndex:0] contentView];
+    Grid* grid =  [[self getCurrentActiveWindow]  contentView];
     
     if (grid.size == 1.250000) { //adding this check because at a certain scale the UI hangs as it tries to render impossibly small ticks
         // do nothing
@@ -176,5 +189,48 @@
     [grid handleResize];
 
 }
+
+-(IBAction)newDocument:(id)sender {
+    
+    
+    NSArray* windows =  [[NSApplication sharedApplication] windows];
+    NSLog(@"Window count %d", [windows count]);
+   
+    int i = 0;
+    BOOL isActiveSession = NO;
+    
+    
+    for (int i =0; i < [windows count]; i++) {
+        NSWindow* window = [windows objectAtIndex:i];
+        if ([window isVisible]) {
+            isActiveSession = YES;
+        }
+    }
+    
+    if (!isActiveSession) {
+        NSStoryboard *storyboard = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
+        FofWindowController* fofController = [storyboard instantiateControllerWithIdentifier:@"BLARG"];
+    
+        NSLog( [[fofController window] isVisible] ? @"blarg visible" : @"blarg inviz");
+        [[fofController window] setIsVisible:1];
+    } else {
+        NSAlert *alert = [[NSAlert alloc] init];
+        [alert addButtonWithTitle:@"OK"];
+        [alert setMessageText:@"Alert"];
+        [alert setInformativeText:@"Only one session/window is allowed at a time. \r Close the current window if you want to open a new window."];
+        [alert setAlertStyle:NSInformationalAlertStyle];
+        [alert beginSheetModalForWindow:[[NSApplication sharedApplication] keyWindow] completionHandler:nil];
+    }
+}
+        
+        
+        
+        
+
+        
+    
+    
+
+
 
 @end

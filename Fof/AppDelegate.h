@@ -10,12 +10,15 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 @property NSArray* mappedPoints;
+@property BOOL isWindowOpen;
+
 
 - (IBAction)generateCode:(id)sender;
 - (IBAction)increaseGridScale:(id)sender;
 - (IBAction)decreaseGridScale:(id)sender;
 -(IBAction)captureImage:(id)sender;
 -(IBAction)showTickNumbers:(id)sender;
+
 
 
 

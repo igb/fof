@@ -7,15 +7,16 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    NSLog(@"ID: %@", self.identifier);
     // Do any additional setup after loading the view.
     
-    CGRect myNewRect = CGRectMake(100, 100, 150, 150);
+    CGRect myNewRect = CGRectMake(1100, 100, 150, 150);
     
     CGContextRef ctx = [[NSGraphicsContext currentContext] CGContext];
     CGContextSetFillColorWithColor(ctx, [[NSColor redColor] CGColor]);
@@ -24,7 +25,13 @@
 }
 
 
-
+- (void)viewWillDisappear
+{
+    AppDelegate* myDelegate = [[NSApplication sharedApplication] delegate];
+    [myDelegate setIsWindowOpen:false];
+    [myDelegate setMappedPoints:[NSArray array]];
+    NSLog(@"window closing...");
+}
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];
 
