@@ -7,18 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		104CC71E216C54AD00F6E8BC /* FofWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104CC71D216C54AD00F6E8BC /* FofWindowController.m */; };
-		104CC71F216C54AD00F6E8BC /* FofWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104CC71D216C54AD00F6E8BC /* FofWindowController.m */; };
-		104CC720216C54AD00F6E8BC /* FofWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104CC71D216C54AD00F6E8BC /* FofWindowController.m */; };
-		105A15852184B955000E50E1 /* FofCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 105A15842184B955000E50E1 /* FofCodeGenerator.m */; };
-		105A15862184B955000E50E1 /* FofCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 105A15842184B955000E50E1 /* FofCodeGenerator.m */; };
-		105A15872184B955000E50E1 /* FofCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 105A15842184B955000E50E1 /* FofCodeGenerator.m */; };
-		105A158A2184BC2D000E50E1 /* ScalaCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 105A15892184BC2D000E50E1 /* ScalaCodeGenerator.m */; };
-		105A158B2184BC2D000E50E1 /* ScalaCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 105A15892184BC2D000E50E1 /* ScalaCodeGenerator.m */; };
-		105A158C2184BC2D000E50E1 /* ScalaCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 105A15892184BC2D000E50E1 /* ScalaCodeGenerator.m */; };
-		105A158F2184BCF8000E50E1 /* JavaScriptCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 105A158E2184BCF8000E50E1 /* JavaScriptCodeGenerator.m */; };
-		105A15902184BCF8000E50E1 /* JavaScriptCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 105A158E2184BCF8000E50E1 /* JavaScriptCodeGenerator.m */; };
-		105A15912184BCF8000E50E1 /* JavaScriptCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 105A158E2184BCF8000E50E1 /* JavaScriptCodeGenerator.m */; };
+		100F813A2463D77100B0B9EA /* libFoF4MacOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 100F81392463D77100B0B9EA /* libFoF4MacOS.m */; };
+		100F813B2463D77100B0B9EA /* libFoF4MacOS.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 100F81382463D77100B0B9EA /* libFoF4MacOS.h */; };
+		100F813F2463D80100B0B9EA /* JavaCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA993216297BE009E5911 /* JavaCodeGenerator.m */; };
+		100F81402463D80100B0B9EA /* JavaScriptCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 105A158E2184BCF8000E50E1 /* JavaScriptCodeGenerator.m */; };
+		100F81412463D80100B0B9EA /* PythonCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AF641821880CE900FE6572 /* PythonCodeGenerator.m */; };
+		100F81442463D80100B0B9EA /* ScalaCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 105A15892184BC2D000E50E1 /* ScalaCodeGenerator.m */; };
+		100F81452463D87C00B0B9EA /* FofWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 104CC71D216C54AD00F6E8BC /* FofWindowController.m */; };
+		100F81462463D8C600B0B9EA /* FofCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 105A15842184B955000E50E1 /* FofCodeGenerator.m */; };
+		100F814B2463F8D600B0B9EA /* liblibFoF4MacOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 100F81362463D77100B0B9EA /* liblibFoF4MacOS.a */; };
 		105A159421863165000E50E1 /* ScalaTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 105A159321863165000E50E1 /* ScalaTemplate.txt */; };
 		105A159521863165000E50E1 /* ScalaTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 105A159321863165000E50E1 /* ScalaTemplate.txt */; };
 		105A159621863165000E50E1 /* ScalaTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 105A159321863165000E50E1 /* ScalaTemplate.txt */; };
@@ -28,9 +25,6 @@
 		10AF640F218759AF00FE6572 /* JavaScriptTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 10AF640E218759AF00FE6572 /* JavaScriptTemplate.txt */; };
 		10AF6410218759AF00FE6572 /* JavaScriptTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 10AF640E218759AF00FE6572 /* JavaScriptTemplate.txt */; };
 		10AF6411218759AF00FE6572 /* JavaScriptTemplate.txt in Resources */ = {isa = PBXBuildFile; fileRef = 10AF640E218759AF00FE6572 /* JavaScriptTemplate.txt */; };
-		10AF641921880CE900FE6572 /* PythonCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AF641821880CE900FE6572 /* PythonCodeGenerator.m */; };
-		10AF641A21880CE900FE6572 /* PythonCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AF641821880CE900FE6572 /* PythonCodeGenerator.m */; };
-		10AF641B21880CE900FE6572 /* PythonCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 10AF641821880CE900FE6572 /* PythonCodeGenerator.m */; };
 		10BCA953214F0224009E5911 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA952214F0224009E5911 /* AppDelegate.m */; };
 		10BCA956214F0224009E5911 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA955214F0224009E5911 /* ViewController.m */; };
 		10BCA958214F0227009E5911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BCA957214F0227009E5911 /* Assets.xcassets */; };
@@ -39,8 +33,6 @@
 		10BCA969214F0227009E5911 /* FofTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA968214F0227009E5911 /* FofTests.m */; };
 		10BCA974214F0227009E5911 /* FofUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA973214F0227009E5911 /* FofUITests.m */; };
 		10BCA98521527781009E5911 /* Grid.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA98421527781009E5911 /* Grid.m */; };
-		10BCA994216297BE009E5911 /* JavaCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA993216297BE009E5911 /* JavaCodeGenerator.m */; };
-		10BCA995216297BE009E5911 /* JavaCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BCA993216297BE009E5911 /* JavaCodeGenerator.m */; };
 		10E371672457DB65000CF572 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E371662457DB65000CF572 /* AppDelegate.m */; };
 		10E3716A2457DB65000CF572 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10E371692457DB65000CF572 /* ViewController.m */; };
 		10E3716D2457DB65000CF572 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10E3716B2457DB65000CF572 /* Main.storyboard */; };
@@ -58,6 +50,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		100F81492463D9C300B0B9EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10BCA946214F0224009E5911 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 100F81352463D77100B0B9EA;
+			remoteInfo = libFoF4MacOS;
+		};
 		10BCA965214F0227009E5911 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 10BCA946214F0224009E5911 /* Project object */;
@@ -89,6 +88,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		100F81342463D77100B0B9EA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				100F813B2463D77100B0B9EA /* libFoF4MacOS.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		10E3719A2457DEDA000CF572 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -102,6 +111,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		100F81362463D77100B0B9EA /* liblibFoF4MacOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibFoF4MacOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		100F81382463D77100B0B9EA /* libFoF4MacOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libFoF4MacOS.h; sourceTree = "<group>"; };
+		100F81392463D77100B0B9EA /* libFoF4MacOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libFoF4MacOS.m; sourceTree = "<group>"; };
 		104CC71C216C54AD00F6E8BC /* FofWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FofWindowController.h; sourceTree = "<group>"; };
 		104CC71D216C54AD00F6E8BC /* FofWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FofWindowController.m; sourceTree = "<group>"; };
 		105A15832184B955000E50E1 /* FofCodeGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FofCodeGenerator.h; sourceTree = "<group>"; };
@@ -160,10 +172,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		100F81332463D77100B0B9EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		10BCA94B214F0224009E5911 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				100F814B2463F8D600B0B9EA /* liblibFoF4MacOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +232,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		100F81372463D77100B0B9EA /* libFoF4MacOS */ = {
+			isa = PBXGroup;
+			children = (
+				105A159221863114000E50E1 /* Resources */,
+				10BCA992216297BE009E5911 /* JavaCodeGenerator.h */,
+				10BCA993216297BE009E5911 /* JavaCodeGenerator.m */,
+				105A15882184BC2D000E50E1 /* ScalaCodeGenerator.h */,
+				105A15892184BC2D000E50E1 /* ScalaCodeGenerator.m */,
+				105A158D2184BCF8000E50E1 /* JavaScriptCodeGenerator.h */,
+				105A158E2184BCF8000E50E1 /* JavaScriptCodeGenerator.m */,
+				10AF641721880CE900FE6572 /* PythonCodeGenerator.h */,
+				10AF641821880CE900FE6572 /* PythonCodeGenerator.m */,
+				10BCA9912162971B009E5911 /* CodeGenerator.h */,
+				100F81382463D77100B0B9EA /* libFoF4MacOS.h */,
+				100F81392463D77100B0B9EA /* libFoF4MacOS.m */,
+			);
+			path = libFoF4MacOS;
+			sourceTree = "<group>";
+		};
+		100F81472463D98600B0B9EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		105A159221863114000E50E1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,7 +279,9 @@
 				10E371802457DB6C000CF572 /* Fof4iOSTests */,
 				10E3718B2457DB6C000CF572 /* Fof4iOSUITests */,
 				10E3719D2457DEDA000CF572 /* libFoF4iOS */,
+				100F81372463D77100B0B9EA /* libFoF4MacOS */,
 				10BCA94F214F0224009E5911 /* Products */,
+				100F81472463D98600B0B9EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -247,6 +295,7 @@
 				10E3717D2457DB6C000CF572 /* Fof4iOSTests.xctest */,
 				10E371882457DB6C000CF572 /* Fof4iOSUITests.xctest */,
 				10E3719C2457DEDA000CF572 /* liblibFoF4iOS.a */,
+				100F81362463D77100B0B9EA /* liblibFoF4MacOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -254,9 +303,12 @@
 		10BCA950214F0224009E5911 /* Fof */ = {
 			isa = PBXGroup;
 			children = (
-				105A159221863114000E50E1 /* Resources */,
 				10BCA951214F0224009E5911 /* AppDelegate.h */,
 				10BCA952214F0224009E5911 /* AppDelegate.m */,
+				104CC71C216C54AD00F6E8BC /* FofWindowController.h */,
+				104CC71D216C54AD00F6E8BC /* FofWindowController.m */,
+				105A15832184B955000E50E1 /* FofCodeGenerator.h */,
+				105A15842184B955000E50E1 /* FofCodeGenerator.m */,
 				10BCA954214F0224009E5911 /* ViewController.h */,
 				10BCA955214F0224009E5911 /* ViewController.m */,
 				10BCA957214F0227009E5911 /* Assets.xcassets */,
@@ -266,19 +318,6 @@
 				10BCA95F214F0227009E5911 /* Fof.entitlements */,
 				10BCA98321527781009E5911 /* Grid.h */,
 				10BCA98421527781009E5911 /* Grid.m */,
-				10BCA9912162971B009E5911 /* CodeGenerator.h */,
-				105A15832184B955000E50E1 /* FofCodeGenerator.h */,
-				105A15842184B955000E50E1 /* FofCodeGenerator.m */,
-				10BCA992216297BE009E5911 /* JavaCodeGenerator.h */,
-				10BCA993216297BE009E5911 /* JavaCodeGenerator.m */,
-				104CC71C216C54AD00F6E8BC /* FofWindowController.h */,
-				104CC71D216C54AD00F6E8BC /* FofWindowController.m */,
-				105A15882184BC2D000E50E1 /* ScalaCodeGenerator.h */,
-				105A15892184BC2D000E50E1 /* ScalaCodeGenerator.m */,
-				105A158D2184BCF8000E50E1 /* JavaScriptCodeGenerator.h */,
-				105A158E2184BCF8000E50E1 /* JavaScriptCodeGenerator.m */,
-				10AF641721880CE900FE6572 /* PythonCodeGenerator.h */,
-				10AF641821880CE900FE6572 /* PythonCodeGenerator.m */,
 			);
 			path = Fof;
 			sourceTree = "<group>";
@@ -348,6 +387,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		100F81352463D77100B0B9EA /* libFoF4MacOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100F813E2463D77100B0B9EA /* Build configuration list for PBXNativeTarget "libFoF4MacOS" */;
+			buildPhases = (
+				100F81322463D77100B0B9EA /* Sources */,
+				100F81332463D77100B0B9EA /* Frameworks */,
+				100F81342463D77100B0B9EA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libFoF4MacOS;
+			productName = libFoF4MacOS;
+			productReference = 100F81362463D77100B0B9EA /* liblibFoF4MacOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		10BCA94D214F0224009E5911 /* Fof */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10BCA978214F0227009E5911 /* Build configuration list for PBXNativeTarget "Fof" */;
@@ -359,6 +415,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				100F814A2463D9C300B0B9EA /* PBXTargetDependency */,
 			);
 			name = Fof;
 			productName = Fof;
@@ -480,6 +537,9 @@
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Ian Brown";
 				TargetAttributes = {
+					100F81352463D77100B0B9EA = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 					10BCA94D214F0224009E5911 = {
 						CreatedOnToolsVersion = 9.3;
 						SystemCapabilities = {
@@ -529,6 +589,7 @@
 			projectRoot = "";
 			targets = (
 				10BCA94D214F0224009E5911 /* Fof */,
+				100F81352463D77100B0B9EA /* libFoF4MacOS */,
 				10BCA963214F0227009E5911 /* FofTests */,
 				10BCA96E214F0227009E5911 /* FofUITests */,
 				10E371622457DB64000CF572 /* Fof4iOS */,
@@ -602,19 +663,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		100F81322463D77100B0B9EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100F81412463D80100B0B9EA /* PythonCodeGenerator.m in Sources */,
+				100F813F2463D80100B0B9EA /* JavaCodeGenerator.m in Sources */,
+				100F81442463D80100B0B9EA /* ScalaCodeGenerator.m in Sources */,
+				100F813A2463D77100B0B9EA /* libFoF4MacOS.m in Sources */,
+				100F81402463D80100B0B9EA /* JavaScriptCodeGenerator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		10BCA94A214F0224009E5911 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				10BCA956214F0224009E5911 /* ViewController.m in Sources */,
+				100F81452463D87C00B0B9EA /* FofWindowController.m in Sources */,
 				10BCA95E214F0227009E5911 /* main.m in Sources */,
-				105A158F2184BCF8000E50E1 /* JavaScriptCodeGenerator.m in Sources */,
-				10BCA994216297BE009E5911 /* JavaCodeGenerator.m in Sources */,
-				10AF641921880CE900FE6572 /* PythonCodeGenerator.m in Sources */,
-				104CC71E216C54AD00F6E8BC /* FofWindowController.m in Sources */,
-				105A15852184B955000E50E1 /* FofCodeGenerator.m in Sources */,
-				105A158A2184BC2D000E50E1 /* ScalaCodeGenerator.m in Sources */,
 				10BCA953214F0224009E5911 /* AppDelegate.m in Sources */,
+				100F81462463D8C600B0B9EA /* FofCodeGenerator.m in Sources */,
 				10BCA98521527781009E5911 /* Grid.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -623,13 +692,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				104CC71F216C54AD00F6E8BC /* FofWindowController.m in Sources */,
-				105A158B2184BC2D000E50E1 /* ScalaCodeGenerator.m in Sources */,
-				10BCA995216297BE009E5911 /* JavaCodeGenerator.m in Sources */,
-				105A15862184B955000E50E1 /* FofCodeGenerator.m in Sources */,
 				10BCA969214F0227009E5911 /* FofTests.m in Sources */,
-				105A15902184BCF8000E50E1 /* JavaScriptCodeGenerator.m in Sources */,
-				10AF641A21880CE900FE6572 /* PythonCodeGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,12 +700,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				105A15912184BCF8000E50E1 /* JavaScriptCodeGenerator.m in Sources */,
 				10BCA974214F0227009E5911 /* FofUITests.m in Sources */,
-				105A158C2184BC2D000E50E1 /* ScalaCodeGenerator.m in Sources */,
-				105A15872184B955000E50E1 /* FofCodeGenerator.m in Sources */,
-				10AF641B21880CE900FE6572 /* PythonCodeGenerator.m in Sources */,
-				104CC720216C54AD00F6E8BC /* FofWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,6 +742,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		100F814A2463D9C300B0B9EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 100F81352463D77100B0B9EA /* libFoF4MacOS */;
+			targetProxy = 100F81492463D9C300B0B9EA /* PBXContainerItemProxy */;
+		};
 		10BCA966214F0227009E5911 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 10BCA94D214F0224009E5911 /* Fof */;
@@ -734,6 +797,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		100F813C2463D77100B0B9EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 855SPZ345Z;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		100F813D2463D77100B0B9EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 855SPZ345Z;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		10BCA976214F0227009E5911 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1130,6 +1227,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		100F813E2463D77100B0B9EA /* Build configuration list for PBXNativeTarget "libFoF4MacOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100F813C2463D77100B0B9EA /* Debug */,
+				100F813D2463D77100B0B9EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		10BCA949214F0224009E5911 /* Build configuration list for PBXProject "Fof" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
