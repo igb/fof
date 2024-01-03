@@ -81,7 +81,7 @@ public class Fof {
 		return null;
 	}
 
-	public static Double getYforX(Double x) {
+	public Double getYforX(Double x) {
 		Point2D.Double a = findA(x, points);
 		Point2D.Double b = findB(x, points);
 		return interpolate(x, a, b);
@@ -95,7 +95,6 @@ public class Fof {
 		System.out.println(y);
 
 
-		getYforX(x);
 	}
 
 
